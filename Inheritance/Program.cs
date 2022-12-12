@@ -29,11 +29,39 @@ namespace Inheritance
              * Creatively display the class member values 
              */
 
+            Bird ostrich = new Bird();
+            ostrich.Heterotrophic = true;
+            ostrich.TypeOfConsumer = "herbivore";
+            ostrich.HasDeterminedBodyPlan = true;
+            ostrich.IsMotile = true;
+            ostrich.Endothermic = true;
+            ostrich.HasFeathers = true;
+            ostrich.HasBeak = true;
+            ostrich.ProducesHardShelledEggs = true;
+            Console.WriteLine("Ostrich:");
+            ostrich.PrintAnimalDetails();
+            ostrich.PrintBirdDetails();
+            Console.WriteLine();
+
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+            Reptile turtle = new Reptile()
+            {
+                Heterotrophic = true,
+                TypeOfConsumer = "omnivore",
+                HasDeterminedBodyPlan = true,
+                IsMotile = true,
+                HasScales = true,
+                Ectothermic = true,
+                HasTeeth = false,
+                Precocial = true
+            };
+            Console.WriteLine("Turtle:");
+            turtle.PrintAnimalDetails();
+            turtle.PrintReptileDetails();
         }
     }
 }
